@@ -1,0 +1,63 @@
+<div class="page-header">
+  <div class="row">
+    <div class="col-sm-6 col-xs-12">
+      <h1 class="font-thin h3 m-0" id="user_form_title">{{form_title}}</h1>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-3 col-md-4 col-sm-6 boxs">
+    <form  (ngSubmit)="save($event)" id="user_form" class="boxs-body" #userForm="ngForm">
+      <input type="hidden" id="user_id" [(ngModel)]="user.user_id" name="user_id" />
+      <div class="form-group">
+        <label for="username" class="control-label">Username</label>
+        <input type="text" class="form-control" id="username" name="username" [(ngModel)]="user.username" required>
+      </div>
+      <div class="form-group">
+        <label for="email" class="control-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" [(ngModel)]="user.email" required>
+      </div>
+      <div class="form-group">
+        <label for="user_type_id" class="control-label">User type</label>
+        <select class="form-control" id="user_type_id" name="user_type_id" [(ngModel)]="user.user_type_id">
+          <option *ngFor="let user_type of user_types" value="{{user_type.user_type_id}}">{{user_type.user_type}}</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="password" class="control-label">Password</label>
+        <input type="password" class="form-control" id="password" name="password" [(ngModel)]="user.password">
+      </div>
+      <div class="form-group">
+        <label for="firstname" class="control-label">First Name</label>
+        <input type="text" class="form-control" id="firstname" name="firstname" [(ngModel)]="user.firstname">
+      </div>
+      <div class="form-group">
+        <label for="lastname" class="control-label">Last Name</label>
+        <input type="text" class="form-control" id="lastname" name="lastname" [(ngModel)]="user.lastname">
+      </div>
+      <div class="form-group">
+          <label for="status">Valid
+          <input type="checkbox" id="status" name="status" (ngModel)="user.status==1" value="1"></label>
+      </div>
+
+      <fieldset>
+        <legend>User access</legend>
+        <div class="form-group">
+          <label for="user_access_language_id" style="display:block" class="control-label">Languages</label>
+          <select multiple class="form-control" name="user_access_language_id" id="user_access_language_id" (change) = "userAccessLanguageOnChange()">
+            <option *ngFor="let language of language_options" value="{{language.language_id}}">{{language.name}}</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="user_access_project_id" style="display:block" class="control-label">Projects</label>
+          <select multiple class="form-control" name="user_access_project_id" id="user_access_project_id" (change) = "userAccessProjectOnChange()">
+            <option *ngFor="let project of project_options" value="{{project.project_id}}">{{project.project_name}}</option>
+          </select>
+        </div>
+      </fieldset>
+      <button type="submit" class="btn btn-primary pull-left">Save</button>
+      <button (click)="goBack()" class="btn btn-default pull-right" type="button">Back</button>
+    </form>
+  </div>
+</div>

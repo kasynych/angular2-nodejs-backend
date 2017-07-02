@@ -1,0 +1,5 @@
+version: 1
+cron:
+ - name: "backup-job"
+   url: "https://promocodes.funeasylearn.com/backup"
+   schedule: "0 * * * *"

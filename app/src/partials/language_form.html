@@ -1,0 +1,24 @@
+<div class="page-header">
+  <div class="row">
+    <div class="col-sm-6 col-xs-12">
+      <h1 class="font-thin h3 m-0">{{form_title}}</h1>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-3 col-md-4 col-sm-6 boxs">
+    <form  (ngSubmit)="save($event)" id="language_form" class="boxs-body" #userForm="ngForm">
+      <input type="hidden" id="language_id" [(ngModel)]="language.language_id" name="language_id" />
+      <div class="form-group">
+        <label for="username" class="control-label">Language</label>
+        <select class="form-control" id="language_id" name="language_id" [(ngModel)]="language.code" (change)="languageSelOnChange($event.target)">
+          <option value="0" selected="selected">Select language</option>
+          <option *ngFor="let language_option of language_options" value="{{language_option.code}}">{{language_option.name}}</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary pull-left">Save</button>
+      <button (click)="goBack()" class="btn btn-default pull-right" type="Button">Back</button>
+    </form>
+  </div>
+</div>

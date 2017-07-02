@@ -1,0 +1,38 @@
+<div class="page-header">
+  <div class="row">
+    <div class="col-sm-6 col-xs-12">
+      <h1 class="font-thin h3 m-0">{{form_title}}</h1>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-3 col-md-4 col-sm-6 boxs">
+    <form (ngSubmit)="save($event)" id="string_form" class="boxs-body" #userForm="ngForm">
+      <input type="hidden" id="project_string_id" [(ngModel)]="string.project_string_id" name="project_string_id" />
+      <div class="form-group">
+        <label for="string_name" class="control-label">Type</label>
+        <select name="type" id="type" class="form-control" (change) = "typeOnChange()">
+          <option value="Key">Key</option>
+          <option value="Comment">Comment</option>
+          <option value="Line Break">Line Break</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="platform" class="control-label">Key</label>
+        <input type="text" class="form-control" name="platform" id="platform" [(ngModel)] = "string.key" />
+      </div>
+      <div class="form-group">
+        <label for="parameter1" class="control-label">English</label>
+        <input type="text" class="form-control" name="english" id="english" [(ngModel)] = "string.english" />
+      </div>
+      <div class="form-group">
+        <label for="parameter4" class="control-label">Universal String ID</label>
+        <input type="text" class="form-control" name="universal_string_id" id="universal_string_id" [(ngModel)] = "string.universal_string_id" />
+      </div>
+      <button type="submit" class="btn btn-primary pull-left">Save</button>
+      <button (click)="goBack()" class="btn btn-default pull-right" type="button">Back</button>
+    </form>
+  </div>
+</div>

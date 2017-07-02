@@ -1,0 +1,43 @@
+<div class="page-header">
+  <div class="row">
+    <div class="col-sm-6 col-xs-12">
+      <h1 class="font-thin h3 m-0">User Access</h1>
+    </div>
+  </div>
+</div>
+
+<div class="form-inline">
+  <div class="form-group">
+    <button type="button" class="btn btn-primary btn-sm" (click) = "bulkDelete()">Delete</button>
+  </div>
+  <div class="form-group pull-right">
+    <a (click) = "refresh()" href="javascript:void(0)"><span class="glyphicon glyphicon-refresh"></span></a>
+  </div>
+</div>
+<table class="table table-striped table-responsive table-hover list" id="user-accesses">
+  <thead>
+    <tr>
+      <th><input type="checkbox" id="check_all_checkbox" (click) = "checkAll()" /></th>
+      <th>ID</th>
+      <th>User ID</th>
+      <th>Access Type</th>
+      <th width="100px">Project ID</th>
+      <th width="130px">Language ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user_access of user_accesses">
+      <td><input type="checkbox" value="{{user_access.user_access_id}}" /></td>
+      <td>{{user_access.user_access_id}}</td>
+      <td>{{user_access.user_id}}</td>
+      <td>{{user_access.type_access}}</td>
+      <td>{{user_access.project_id}}</td>
+      <td>{{user_access.language_id}}</td>
+    </tr>
+  </tbody>
+</table>
+<div class="form-inline">
+  <div class="form-group">
+    <button type="button" class="btn btn-primary btn-sm" (click) = "bulkDelete()">Delete</button>
+  </div>
+</div>

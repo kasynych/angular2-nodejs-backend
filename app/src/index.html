@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FunEasyLearn: Strings</title>
+        <base href="/">
+        <meta charset="utf-8"/>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.css" rel="stylesheet">
+        <link href="css/jquery-ui.min.css" rel="stylesheet">
+        <link href="css/jquery-ui.theme.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="css/dashboard.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container-fluid">
+        <app><div class="text-center" style="margin-top:20px;">Loading dashboard...</div></app>
+        </div>
+
+        <!-- 1. Load libraries -->
+        <!-- Polyfill(s) for older browsers -->
+        <script src="js/lib/jquery.js"></script>
+        <script src="js/lib/angular2/shim.min.js"></script>
+        <script src="js/lib/angular2/system.src.js"></script>
+        <script src="js/lib/angular2/Rx.js"></script>
+        <script src="js/lib/angular2/zone.js"></script>
+        <script src="js/lib/angular2/angular2.dev.js"></script>
+        <script src="js/lib/angular2/http.dev.js"></script>
+        <script src="js/lib/bootstrap.js"></script>
+        <script src="js/lib/angular2/Reflect.js"></script>
+        <script src="js/lib/angular2/system.src.js"></script>
+        <script src="js/lib/jquery-ui.min.js"></script>
+        <!-- System.JS configuration -->
+        <script src="./systemjs.config.js"></script>       
+        <script>
+            System.config({
+                "DefaultJSExtensions":true
+            });
+
+            System.import('js/main').catch(function(err){console.log(err)});
+        </script>               
+    </body>
+</html>

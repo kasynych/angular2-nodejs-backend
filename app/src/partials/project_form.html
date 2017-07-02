@@ -1,0 +1,68 @@
+<div class="page-header">
+  <div class="row">
+    <div class="col-sm-6 col-xs-12">
+      <h1 class="font-thin h3 m-0">{{form_title}}</h1>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-3 col-md-4 col-sm-6 boxs">
+    <form  (ngSubmit)="save($event)" id="project_form" class="boxs-body" #userForm="ngForm">
+      <input type="hidden" id="project_id" [(ngModel)]="project.project_id" name="project_id" />
+      <div class="form-group">
+        <label for="project_name" class="control-label">Project Name</label>
+        <input type="text" class="form-control" name="project_name" id="project_name" [(ngModel)] = "project.project_name" required />
+      </div>
+      <div class="form-group">
+        <label for="platform" class="control-label">Platform</label>
+        <input type="text" class="form-control" name="platform" id="platform" [(ngModel)] = "project.platform" required />
+      </div>
+      <div class="form-group">
+        <label for="parameter1" class="control-label">Parameter 1</label>
+        <input type="text" class="form-control" name="parameter1" id="parameter1" [(ngModel)] = "project.parameter1" />
+      </div>
+      <div class="form-group">
+        <label for="parameter2" class="control-label">Parameter 2</label>
+        <input type="text" class="form-control" name="parameter2" id="parameter2" [(ngModel)] = "project.parameter2" />
+      </div>
+      <div class="form-group">
+        <label for="parameter3" class="control-label">Parameter 3</label>
+        <input type="text" class="form-control" name="parameter3" id="parameter3" [(ngModel)] = "project.parameter3" />
+      </div>
+      <div class="form-group">
+        <label for="parameter4" class="control-label">Parameter 4</label>
+        <input type="text" class="form-control" name="parameter4" id="parameter4" [(ngModel)] = "project.parameter4" />
+      </div>
+      <button type="submit" class="btn btn-primary pull-left">Save</button>
+      <button (click)="goBack()" class="btn btn-default pull-right" type="button">Back</button>
+    </form>
+  </div>
+  <div class="col-lg-3 col-md-4 col-sm-6 boxs">
+    <fieldset>
+      <legend>Project Languages</legend>
+      <div id="project_languages">
+      <table class="table table-striped table-responsive table-hover list">
+        <thead>
+          <tr>
+            <th>Language</th>
+            <th>Code</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let language of languages">
+            <input type="hidden" name="language_id[]" value="{{language.language_id}}" />
+            <input *ngIf="isProjectLanguage(language)" type="hidden" name="checked[]" value="1" />
+            <td *ngIf="isProjectLanguage(language)" class="warning" (click)="checkLang($event.target)">{{language.name}}<span class="glyphicon glyphicon-ok text-success"></span></td>
+            <td *ngIf="isProjectLanguage(language)" class="warning" (click)="checkLang($event.target)"><input type="text" name="code[]" [(ngModel)]="language.code" class="form-control"  /> </td>
+            <input *ngIf="!isProjectLanguage(language)" type="hidden" name="checked[]" value="0" />            
+            <td *ngIf="!isProjectLanguage(language)" (click)="checkLang($event.target)">{{language.name}}</td>
+            <td *ngIf="!isProjectLanguage(language)" (click)="checkLang($event.target)"><input type="text" name="code[]" [(ngModel)]="language.code" class="form-control"  /> </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </fieldset>
+
+  </div>
+</div>

@@ -1,0 +1,100 @@
+<div class="page-header">
+  <div class="row">
+    <div class="col-sm-6 col-xs-12">
+      <h1 class="font-thin h3 m-0">Strings</h1>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <label class="btn btn-default btn-file">
+              Import <input type="file" (change)="importHandler($event)" hidden name="strings">
+          </label>
+        </div>
+        <div class="form-group">
+          <button type="button" class="btn btn-default" (click) = "export()">Export</button>
+        </div>
+      </form>
+<!--      
+      <form class="navbar-form navbar-right" (ngSubmit)="search($event)">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+-->
+    </div>
+  </div>
+</nav>
+<h2>{{project.project_name}}</h2>
+<div class="form-inline">
+  <div class="form-group pull-right">
+    <a (click) = "refresh()" href="javascript:void(0)"><span class="glyphicon glyphicon-refresh"></span></a>
+  </div>
+</div>
+<table class="table table-striped table-responsive table-hover list" id="users">
+  <thead>
+    <tr>
+      <th width="40px">ID</th>
+      <th width="140px">Type</th>
+      <th>Key</th>
+      <th>English</th>
+      <th>Translated Languages Nr.</th>
+      <th width="100px">Actions</th>
+      <th>Universal String ID</th>
+    </tr>
+  </thead>
+  <tbody class="sortable">
+    <tr *ngFor="let string of strings">
+      <td *ngIf="string.row_type == 'regular'">{{string.project_string_id}}</td>
+      <td *ngIf="string.row_type == 'form'">
+        <span *ngIf="string.project_string_id == 0">N/A</span>
+        <span *ngIf="string.project_string_id != 0">{{string.project_string_id}}</span>
+      </td>
+      <td *ngIf="string.row_type == 'regular'">{{string.type}}</td>
+      <td *ngIf="string.row_type == 'form'">
+        <select name="type" id="type" class="form-control" [(ngModel)]="string.type">
+          <option value="Key">Key</option>
+          <option value="Comment">Comment</option>
+          <option value="Line Break">Line Break</option>
+          <option value="Other">Other</option>
+        </select>
+      </td>
+      <td *ngIf="string.row_type == 'regular'">{{string.key}}</td>
+      <td *ngIf="string.row_type == 'form'">
+        <input type="text" name="key" class="form-control" placeholder="Key" [(ngModel)]="string.key" />
+      </td>
+      <td *ngIf="string.row_type == 'regular'">{{string.english}}</td>
+      <td *ngIf="string.row_type == 'form'">
+        <input type="text" name="english" class="form-control" placeholder="English" [(ngModel)]="string.english" />
+      </td>
+      <td *ngIf="string.row_type == 'regular'">123</td>
+      <td *ngIf="string.row_type == 'form'">
+      </td>
+      <td *ngIf="string.row_type == 'regular'">
+        <a href="javascript:void(0)" (click)="addStringModel(string)"><span class="glyphicon glyphicon-plus"></span></a>&nbsp;
+        <a href="javascript:void(0)" (click)="switchRowToForm(string)"><span class="glyphicon glyphicon-pencil"></span></a>&nbsp;
+        <a href="javascript:void(0)" (click)="delete([string.project_string_id])"><span class="glyphicon glyphicon-trash"></span></a>
+      </td>
+      <td *ngIf="string.row_type == 'form'">
+        <a href="javascript:void(0)" (click)="saveString(string)"><span class="glyphicon glyphicon-ok"></span></a>&nbsp;
+        <a href="javascript:void(0)" (click)="switchRowToRegular(string)"><span class="glyphicon glyphicon-remove"></span></a>
+      </td>
+      <td *ngIf="string.row_type == 'regular'">
+        <div *ngIf="string.universal_string_id!=null">
+          {{string.universal_string_id}}
+        </div>
+        <div *ngIf="string.universal_string_id == null">
+          <button class="btn btn-default" (click)="assignUniversalString(string)">Assign Universal String ID</button>
+        </div>
+      </td>
+      <td *ngIf="string.row_type == 'form'"></td>
+    </tr>
+  </tbody>
+</table>

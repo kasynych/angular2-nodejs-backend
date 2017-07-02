@@ -1,0 +1,76 @@
+body{
+    padding-top:0;
+}
+
+h1 button{
+    margin-left: 10px;
+}
+
+table th{
+    white-space:nowrap;
+}
+
+.sidebar{
+    top:0;
+}
+
+.main{
+    position:relative;
+}
+
+#messages > div{
+    display: none;
+    text-transform: capitalize;
+}
+
+#user_type_id option{
+    text-transform: capitalize;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+.nav.nav-sidebar.submenu{
+    padding-left:40px;
+    margin-bottom:0px;
+}
+
+#loading_overlay{
+    position:fixed;
+    right:0;
+    top:0;
+    height:100vh;
+    width:100%;
+    background-color:#efefef;
+    opacity:0.3;
+    z-index:1;
+    background-image:url("../img/loading.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#project_languages{
+    max-height:80vh;
+    overflow-y:auto;
+}
+
+#project_languages .glyphicon-ok{
+    margin-left:5px;
+}

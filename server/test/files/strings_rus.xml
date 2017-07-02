@@ -1,0 +1,337 @@
+<resources>
+    //Dashboard
+    <string name="dialog_menu_game_score_title">Результат игры</string>
+    <string name="category_title">Тема</string>
+    <string name="sub_category_title">Подтема</string>
+    <string name="games_title">Игра</string>
+
+    //Navigation drawer
+    <string name="drawer_item_level">Уровень</string>
+    <string name="drawer_item_support">Поддержка</string>
+    <string name="drawer_item_language">Родной язык</string>
+    <string name="drawer_item_about">Об этом приложении</string>
+    <string name="drawer_last_language_item">Other</string>
+    <string name="drawer_item_app">Приложение</string>
+    <string name="drawer_item_settings">Настройки</string>
+    <string name="drawer_item_rate_application">Оценить приложение</string>
+    <string name="drawer_item_more_language">Еще больше языковых приложений</string>
+    <string name="drawer_item_synchronize">Синхронизировать</string>
+
+    //Levels
+    <string name="learn_level_beginner">Начинающий</string>
+    <string name="learn_level_intermediate">Средний</string>
+    <string name="learn_level_advanced">Продвинутый</string>
+    <string name="learn_level_expert">Экспертный</string>
+
+    //Store
+    <string name="store_level_beginner">Начинающий Уровень</string>
+    <string name="store_level_intermediate">Средний Уровень</string>
+    <string name="store_level_advanced">Продвинутый Уровень</string>
+    <string name="store_level_expert">Экспертный Уровень</string>
+    <string name="store_level_all">Все Уровни</string>
+    <string name="store_level_all_discount">Все Уровни</string>
+    <string name="store_item_remove_ads_title">Убрать Рекламу</string>
+    <string name="store_item_coming_soon_title">Скоро!</string>
+
+    //Store - Level Unlock Release Note
+    <string name="beginner_level_unlock_release_note">500 Фраз</string>
+    <string name="intermediate_level_unlock_release_note">1.000 Фраз</string>
+    <string name="advance_level_unlock_release_note">1.500 Фраз</string>
+    <string name="expert_level_unlock_release_note">2.000 Фраз</string>
+    <string name="all_level_unlock_release_note">5.000 Фраз</string>
+
+    //Notifications
+    <string name="notification_title">Новая Фраза - %1$s</string>
+    <string name="notification_content">Найти перевод \"%1$s\".</string>
+
+    //Links
+    <string name="privacy_policy"><u>Политика Конфиденциальности</u></string>
+    <string name="license_agreement"><u>Лицензионное Соглашение</u></string>
+    <string name="search_actionbar_name">Поиск Фразы</string>
+
+    //Flowers popup
+    <string name="flower_menu_dialog_shop_item">Магазин</string>
+    <string name="flower_menu_dialog_earn_item">Лайкните нас на Facebook и получите %1$s цветов!</string>
+    <string name="flower_menu_dialog_faq_item">ЧАВО</string>
+    <string name="flower_menu_dialog_score_item">Цветы Заработаны</string>
+    <string name="flower_menu_dialog_earn_item_gplus">Google+ наше приложение и получите %1$s цветов!</string>
+
+    //Flowers welcome back dialog
+    <string name="welcome_back_flowers_text_message">С возвращением – вот ваши %1$s цветки!</string>
+    <string name="welcome_back_flowers_button_message">Собрать</string>
+
+    //Flowers score location dialog
+    <string name="score_location_flowers_text_message">Вы зарабатываете цветы, когда вы играете в игры и вы можете использовать их, чтобы разблокировать уровни. Цветы зафиксированы на каждом устройстве.</string>
+    <string name="score_location_flowers_button_message">OK</string>
+
+    //Rate Application Main Dialog
+    <string name="rate_application_main_text_message">Вам нравится это приложение?</string>
+    <string name="rate_application_main_ok_button_message">Да</string>
+    <string name="rate_application_main_cancel_button_message">Не совсем</string>
+
+    //Rate This Application Dialog
+    <string name="rate_this_application_text_message">Как насчет того, чтобы оценить в Play Store?</string>
+    <string name="rate_this_application_ok_button_message">Да, конечно</string>
+    <string name="rate_this_application_cancel_button_message">Нет, Спасибо</string>
+
+    //Give Us Feedback Dialog
+    <string name="give_us_feedback_text_message">Вы хотели бы оставить отзыв?</string>
+    <string name="give_us_feedback_ok_button_message">Да, конечно</string>
+    <string name="give_us_feedback_cancel_button_message">Нет, Спасибо</string>
+
+    //Facebook like additional dialog (extra confirm)
+    <string name="facebook_like_dialog_text_title">Лайкните нас на Facebook</string>
+    <string name="facebook_like_dialog_text_content">Лайкните нас на Facebook и получите %1$s цветов!</string>
+    <string name="facebook_like_dialog_button_yes">Лайкните нас сейчас</string>
+    <string name="facebook_like_dialog_button_no">Нет, Спасибо</string>
+
+    //Search unlock phrases dialog (Adjust text!!!)
+    <string name="search_unlock_dialog_text_title">Открыть %1$s Уровень</string>
+    <string name="search_unlock_dialog_text_content">Фраза доступна на уровне %1$s.</string>
+    <string name="search_unlock_dialog_button_yes">Да</string>
+    <string name="search_unlock_dialog_button_no">Нет, Спасибо</string>
+    <string name="search_total_count_level_phrases">%1$s Фраз</string>
+
+    //Dashboard Advertising
+    <string name="sponsored_ad_title">Реклама спонсора</string>
+    <string name="remove_this_add_title">Убрать эту рекламу!</string>
+
+    //Review Manage
+    <string name="review">Повторить %1$s</string>
+    <string name="review_manager_category_title">Проанализировать Фразы</string>
+    <string name="review_manager_all_title">Проанализировать Все Фразы</string>
+    <string name="review_manager_wrong_title">Проанализировать Все Неправильные Ответы</string>
+    <string name="review_manager_right_title">Проанализировать Все Правильные Ответы</string>
+    <string name="review_manager_favorite_title">Проанализировать Все Избранные Фразы</string>
+
+    //Review Few Phrase Dialogs
+    //Favourite
+    <string name="review_few_favorite_phrase_title">Мало любимых фраз</string>
+    <string name="review_few_favorite_phrase_message">У вас совсем немного любимых фраз. Выбрать больше любимых фраз.</string>
+    //All
+    <string name="review_few_all_phrase_title">Мало выученных фраз</string>
+    <string name="review_few_all_phrase_message">Вы выучили мало фраз. Игратите больше игр на разные подтемы.</string>
+    //Wrong
+    <string name="review_few_wrong_phrase_title">Несколько неправильных ответов</string>
+    <string name="review_few_wrong_phrase_message">У вас всего несколько неправильных ответов. Сыграйте больше игр с разными подтемами.</string>
+    //Correct
+    <string name="review_few_correct_phrase_title">Несколько правильных ответов</string>
+    <string name="review_few_correct_phrase_message">У вас несколько правильных ответов. Сыграйте больше игр с разными подтемами.</string>
+
+    //Level Download Dialogs
+    <string name="level_download_dialog_text">%1$s уровень был успешно загружен. Измените свой уровень, зайдя в Настройки.</string>
+    <string name="level_download_button_ok">OK</string>
+    <string name="level_download_button_cancel">Нет, Спасибо</string>
+    <string name="level_download_internet_warning">Вы подключены к 3G/4G!\n Скачать сейчас или сделать это при подключении к Wi-Fi.</string>
+    <string name="level_download_exception_title">Скачивание не удалось</string>
+    <string name="level_download_general_exception">Ошибка загрузки. Пожалуйста, попробуйте позже.\n\nПожалуйста, сообщите нам, если проблема повторится.</string>
+    <string name="level_download_exception_content">Недостаточно свободного места на вашем телефоне или SD карте.</string>
+
+    //Level Unlock with Flowers Dialog (Positive)
+    <string name="level_flowers_unlock_positive_dialog_title">Разблокировать уровень</string>
+    <string name="level_flowers_unlock_positive_dialog_message">Вы уверены, что хотите отдать %1$s цветов, чтобы разблокировать этот уровень?</string>
+
+    //Level Unlock with Flowers Dialog (Negative/Error)
+    <string name="level_flowers_unlock_error_dialog_title">Недостаточно цветов</string>
+    <string name="level_flowers_unlock_error_dialog_message">Чтобы разблокировать данный уровень, необходимо %1$s цветов. \n Играйте больше и собирайте цветы.</string>
+
+    //Store - No Internet Exception
+    <string name="no_internet_connection_dialog_title">Не найдено подключение к интернету.</string>
+    <string name="no_internet_connection_dialog_message">Не найдено подключение к интернету. Пожалуйста, проверьте подключение к сети.</string>
+
+    //Store - Not Work Properly (Billing not initialized)
+    <string name="store_load_fail_title">Проблемы с Оплатой</string>
+    <string name="store_load_fail_message">К сожалению, не удалось завершить платеж. Пожалуйста, ппопробуйте позже.</string>
+
+    //Store - General Exception
+    <string name="store_general_exception_title">Ой, что-то пошло не так</string>
+    <string name="store_general_exception_message">Ой, что-то пошло не так. Пожалуйста, попробуйте позже.</string>
+
+    //Store price button value
+    <string name="store_default_price">-</string>
+
+    //Store Discount Dialog
+    <string name="store_discount_dialog_message">ТОЛЬКО СЕГОДНЯ вы можете получить Все Уровни с %1$s%% скидкой!</string>
+    <string name="store_discount_dialog_button_ok">Перейдите в Магазин.</string>
+    <string name="store_discount_dialog_button_cancel">Нет, Спасибо</string>
+
+    //Navigation Drawer Settings Items
+    <string name="menu_settings_day_notification">Уведомления в виде Одной новой Фразы в День</string>
+    <string name="menu_settings_sound">Звукозапись произношения</string>
+
+    //Formal and Informal Dialogs
+    <string name="formal_dialog_title">Формальный язык</string>
+    <string name="formal_dialog_message">Фразы используемые в официальных ситуациях или в случае разговора с людьми, которых вы не очень хорошо знаете.</string>
+    <string name="informal_dialog_title">Неформальный язык</string>
+    <string name="informal_dialog_message">Фразы, используемые в неформальной обстановке или при разговоре с людьми, которых вы знаете хорошо.</string>
+
+    //Watch Video for flowers Dialog
+    <string name="watch_video_for_flowers_dialog_content">Хотели бы вы посмотреть видео и получить %1$s цветов?</string>
+    <string name="watch_video_for_flowers_dialog_button_positive">OK</string>
+    <string name="watch_video_for_flowers_dialog_button_negative">Нет, Спасибо</string>
+
+    //Receive Flowers for Watching Video Dialog
+    <string name="receive_flowers_for_video_title">Вы выиграли %1$s цветков</string>
+    <string name="receive_flowers_for_video_content">Спасибо за просмотр этого видео! Вот ваши %1$s бесплатных цветков.</string>
+    <string name="receive_flowers_for_video_button">OK</string>
+
+    //GPlus Us Dialog
+    <string name="gplus_us_dialog_title">Поставьте лайк нашему приложению на Google+</string>
+    <string name="gplus_us_dialog_content">Нажмите кнопку "G+1", а потом "ОК" для того, чтобы получить %1$s цветов!</string>
+    <string name="gplus_us_dialog_button_positive">G+1</string>
+    <string name="gplus_us_dialog_button_negative">Нет, Спасибо</string>
+
+    //GPlus Share Dialog
+    <string name="gplus_share_message_content">Удивительное приложения для обучения языку! Попробовал его сегодня и оно отлично сработало. Я обожаю, что оно помогает мне учиться новым словам быстро. Я также могу их повторять в любое время.</string>
+    <string name="gplus_share_dialog_content">Поделитесь нашим приложением в Google+ и получите %1$s цветов!</string>
+    <string name="gplus_share_dialog_button_positive">Поделитесь сейчас</string>
+    <string name="gplus_share_dialog_button_negative">Нет, Спасибо</string>
+
+    //Left Menu Account Texts
+    <string name="left_menu_account_sign_in">Вход</string>
+    <string name="left_menu_account_sign_out">Выход</string>
+
+    //Synchronize Complete Dialog
+    <string name="synchronize_dialog_title">Статус синхронизации</string>
+    <string name="synchronize_dialog_content">Синхронизация успешно завершена.</string>
+    <string name="synchronize_dialog_button_text">OK</string>
+
+    //Dialog - Invitation to SignIn with Google.
+    <string name="google_sign_in_dialog_title">Специална Oферта</string>
+    <string name="google_sign_in_dialog_content">Войдите, синхронизируйте ваш прогресс и получите %1$s цветов.</string>
+    <string name="google_sign_in_dialog_button_ok">Войдите</string>
+    <string name="google_sign_in_dialog_button_cancel">Пропустите предложение</string>
+
+    //Dialog - Invitation to GPlus Us.
+    <string name="gplus_invite_dialog_title">Поставьте лайк нашему приложению на Google+</string>
+    <string name="gplus_invite_dialog_content">Нажмите кнопку "G+1", а потом "ОК" для того, чтобы получить %1$s цветов!</string>
+    <string name="gplus_invite_dialog_button_ok">G+1</string>
+    <string name="gplus_invite_dialog_button_cancel">Пропустите предложение</string>
+
+    //Text related to Firebase invite
+    <string name="firebase_invite_message_title">Ваш друг предлагает вам попробовать приложение для обучения языку.</string>
+    <string name="firebase_invite_message_content_max_length_char_100">Я получил много удовольствия при обучении новым словам с бесплатным приложением. Вам точно надо его попробовать.</string>
+    <string name="firebase_invite_email_title">Ваш друг предлагает вам попробовать приложение для обучения языка и получить награду.</string>
+    <string name="firebase_invite_email_param_1">Приложения обучения языку</string>
+    <string name="firebase_invite_email_param_2">Привет, $1$1 Я получил столько удовольствия при обучении словам с помощью бесплатного приложения "%1$s". $1$1FunEasyLearn - это быстрый и легкий способ улучшить Ваш словарный запас с самыми часто используемыми словами и фразами. $1$1 Вам обязательно надо это попробовать.</string>
+    <string name="firebase_invite_email_param_3">СКАЧАЙТЕ СЕЙЧАС</string>
+
+    //FireBase Invitation texts
+    <string name="firebase_invite_dialog_title">Подарите вашим друзьям %1$s цветов.</string>
+    <string name="firebase_invite_dialog_content">Вы получите %1$s цветов тоже.</string>
+    <string name="firebase_invite_dialog_button_positive">Пригласите</string>
+    <string name="firebase_invite_dialog_button_negative">Пропустить</string>
+    <string name="firebase_invite_dialog_checkbox_message">Не показывайте мне это сообщение снова.</string>
+
+    //Receive flowers confirmation dialog
+    <string name="receive_flowers_confirm_dialog_title">Вот ваша награда!</string>
+    <string name="receive_flowers_confirm_dialog_content">Вы заработали %1$s цветов, потому что вас пригласил друг. Ваш друг тоже получил %1$s! Спасибо за то, что учились с нашим приложением!</string>
+
+    //Receive flowers generic flowers confirm dialog
+    <string name="receive_flowers_generic_dialog_title">Вот ваша награда!</string>
+    <string name="receive_flowers_generic_dialog_content">Вы выиграли %1$s цветков</string>
+
+    //Select Language First Time texts
+    <string name="select_native_language_first_time_title">Я говорю:</string>
+    <string name="select_learned_language_title">Я хочу научится:</string>
+    <string name="select_native_language_first_time_button">Продолжить</string>
+
+    //Firebase Invite title in left menu
+    <string name="firebase_invite_title_left_menu">Приглашайте и зарабатывайте</string>
+
+    //Speech recognition texts
+    <string name="google_speech_main_window_title">Слу́шание…</string>
+    <string name="google_speech_button_text">Показать изображение</string>
+
+    //Left menu find us title
+    <string name="left_menu_find_us_title">Найдите нас он-лайн:</string>
+
+    //Place for all strings used for tutorial
+    <string name="tutorial_text_for_all_screen">ПОНЯТНО</string>
+    <string name="tutorial_dashboard_topic_swipe">Прокрутите, чтобы выбрать тему, подтему и игру. Нажмите, чтобы выбрать.</string>
+    <string name="tutorial_dashboard_play_button">Нажмите эту кнопку, чтобы выбрать случайную тему/игру.</string>
+    <string name="tutorial_search_icon">Нажмите на этот значок для поиска фразы.</string>
+    <string name="tutorial_search_first_item">Нажмите любую фразу, чтобы увидеть более подробную информацию.</string>
+    <string name="tutorial_left_menu_icon">Коснитесь этого значка, чтобы управлять всеми настройками приложения.</string>
+    <string name="tutorial_vocabulary_favorite_button">Коснитесь этого значка, чтобы добавить фразу в список любимых.</string>
+    <string name="tutorial_vocabulary_informal_button">Значок показывает, если фраза используется в официальной или неофициальной речи.</string>
+    <string name="tutorial_slow_audio_button">Нажмите эту кнопку, чтобы услышать фразы медленно.</string>
+    <string name="tutorial_auto_play_button">Нажмите эту иконку для включения/ выключения автозапуска.</string>
+    <string name="tutorial_vocabulary_speech_button">Нажмите эту кнопку для проверки вашего произношения.</string>
+    <string name="tutorial_game_help_button">Нажмите эту кнопку, когда вам нужна помощь.</string>
+    <string name="tutorial_end_game_next_button">Нажмите эту кнопку, чтобы играть следующую игру.</string>
+    <string name="tutorial_pause_game_play_button">Нажмите эту кнопку, чтобы вернуться в игру.</string>
+    <string name="tutorial_dashboard_flowers_right_button">Нажмите этот значок, чтобы увидеть сколько цветов вы заработали.</string>
+    <string name="tutorial_end_game_main_for_all_games">Нажмите на любой значок колесо для игры.</string>
+    <string name="tutorial_dashboard_search_icon">Для поиска фразы нажмите здесь.</string>
+
+    //Show Additional Invite Dialog (in case if user is not logged in application
+    <string name="show_invite_additional_dialog_title">Вы не зашли в свой аккаунт</string>
+    <string name="show_invite_additional_dialog_content">Чтобы пригласить друга вы должны войти в свой аккаунт. Пожалуйста, перейдите в меню в левом верхнем углу и войдите в систему.</string>
+    <string name="show_invite_additional_dialog_button_text">OK</string>
+
+    //Left menu reset tutorial title
+    <string name="left_menu_reset_tutorial_title">Сбросить учебные материалы</string>
+
+    //Reset Tutorial Dialog
+    <string name="reset_tutorial_dialog_title">Сбросить учебные материалы</string>
+    <string name="reset_tutorial_dialog_content">Вы хотите сбросить учебные материалы?</string>
+    <string name="reset_tutorial_dialog_button_ok">Да</string>
+    <string name="reset_tutorial_dialog_button_cancel">Нет</string>
+
+    //Video tutorial Button text
+    <string name="tutorial_video_start_button">Начина́ть</string>
+
+    //One Audience Sdk text
+    <string name="one_audience_dialog_title">Запрос на разрешение</string>
+    <string name="one_audience_dialog_content">Примите следующее разрешение для регистрации и синхронизации своих достижений.</string>
+    <string name="one_audience_dialog_button">OK</string>
+
+    //Main Login Screen
+    <string name="action_bar_login_title">Логин</string>
+    <string name="facebook_login_button_text"><![CDATA[Войти с помощью <b>Facebook</b>]]></string>
+    <string name="google_plus_login_button_text"><![CDATA[Войти с помощью <b>Google</b>]]></string>
+    <string name="sign_in_button_text">Логин</string>
+    <string name="sign_up_button_text">Зарегистрироваться</string>
+    <string name="terms_and_policy_text"> <![CDATA[Зарегистрировавшись, вы соглашаетесь с нашими <br/> <b><a href="http://www.funeasylearn.com/eula/">Условиями</a></b> &amp; <b><a href="http://www.funeasylearn.com/privacy-policy/">Политика Конфиденциальности.</a></b>]]></string>
+    <string name="login_wait_message">Please wait...</string>
+    <string name="login_email_hint">Электронная почта</string>
+    <string name="login_password_hint">Пароль</string>
+    <string name="forgot_password_title">Забыли пароль?</string>
+    <string name="forgot_password_button_title">Сброс</string>
+    <string name="forgot_password_main_message_text">Забыли пароль? Для сброса пароля введите адрес электронной почты своего аккаунта</string>
+
+    //Login success messages
+    <string name="logged_in_with_success_title">Login Successful</string>
+    <string name="logged_in_with_success_message">You have logged in successfully.</string>
+    <string name="logged_in_with_succes_button_message">OK</string>
+
+    //Password forgot messages
+    <string name="password_forgot_title">Сбросить пароль</string>
+    <string name="password_forgot_message">Мы отправили электронное письмо с инструкциями о том, как сбросить свой пароль.</string>
+    <string name="password_forgot_button">OK</string>
+
+    //Login Error messages
+    <string name="wrong_email_title">Wrong Email Address</string>
+    <string name="wrong_email_message">The Email Address is in an invalid format. Please try again.</string>
+    <string name="password_null_title">Missing Password</string>
+    <string name="password_null_message">Password must not be null. Please introduce your password.</string>
+
+    //Create New Account messages
+    <string name="account_create_success_dialog_title">Account Successfully Created </string>
+    <string name="account_create_success_dialog_message">Your account has been successfully created. Check your email to set up your password. </string>
+    <string name="account_create_success_dialog_button">OK</string>
+
+//Google Play Services Unavailable Error Message
+    <string name="play_services_unavailable_title">Google Play Services Error</string>
+    <string name="play_services_unavailable_message">Google Play services are unavailable or should be updated.</string>
+    <string name="play_services_unavailable_button">OK</string>
+
+    <string name="vocabulary_ad_skip_button_title">Пропустить</string>
+
+    //Sign out dialog messages
+    <string name="sign_out_dialog_title">Выход</string>
+    <string name="sign_out_dialog_message">Are you sure you want to sign out?</string>
+    <string name="sign_out_dialog_button_ok">Да</string>
+    <string name="sign_out_dialog_button_cancel">Нет</string>
+</resources>

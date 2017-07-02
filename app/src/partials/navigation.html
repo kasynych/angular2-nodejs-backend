@@ -1,0 +1,10 @@
+<ul class="nav nav-sidebar">
+    <li *ngFor="let item of items">
+        <a routerLink="{{item.href}}">{{item.title}}</a>
+        <ul *ngIf="item.subitems.length != 0" class="nav nav-sidebar submenu">
+            <li *ngFor="let subitem of item.subitems">
+                <a routerLink="{{subitem.href}}">{{subitem.title}}</a>
+            </li>
+        </ul>
+    </li>
+</ul>

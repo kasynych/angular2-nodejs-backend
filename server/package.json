@@ -1,0 +1,33 @@
+{
+  "name": "strings",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "aws-sdk": ">= 2.0.9",
+    "body-parser": "*",
+    "cookie-parser": "^1.4.3",
+    "crypto-js": "^3.1.9-1",
+    "excel4node": "^1.2.1",
+    "express": "4.8.*",
+    "express-session": "^1.15.2",
+    "formidable": "^1.1.1",
+    "jade": "*",
+    "mysql": "^2.13.0",
+    "node-uuid": ">= 1.4.1",
+    "node-xml-lite": "0.0.7",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "request": "^2.75.0",
+    "utf8": "^2.1.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "gulp-dev-express": "^1.0.1",
+    "mocha": "^3.4.1",
+    "supertest": "^3.0.0"
+  }
+}
